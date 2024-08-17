@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Retro';
+    src: url('./fonts/RetroFont.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Retro', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #DBCBB2;
+    padding: 0px 100px;
+}
+
+nav button {
+    border: none;
+    background: transparent;
+    font-family: 'Retro', sans-serif;
+    font-size: 30px;
+}
+
+nav button:hover {
+    transform: rotate(10deg);
+}
+
+.spin {
+    animation: spin 25s linear infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#hero {
+    background-image: url("./images/hero-background.png");
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat;  
+    background-attachment: fixed;  
+    height: 500px;
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-text {
+    color: black;
+    background-color: #DBCBB275;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.hero-text p {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+.cta-buttons {
+    margin-top: 1em;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #C87C8A;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+    margin: 0 10px;
+}
+
+.btn:hover {
+    background-color: #B76B6B;
+}
+
+#featured-items {
+    padding: 50px 20px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+#featured-items h2 {
+    margin-bottom: 20px;
+}
+
+.popular-picks {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.item h3 {
+    margin: 10px 0;
+}
+
+.item p {
+    margin: 0;
+}
+
+#about {
+    padding: 50px 20px;
+    background-color: #EAEAEA;
+    text-align: center;
+}
+
+footer {
+    background-color: #DBCBB2;
+    padding: 20px;
+    text-align: center;
+    font-family: cursive;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
