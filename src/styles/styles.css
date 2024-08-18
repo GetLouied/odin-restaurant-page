@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Retro';
-    src: url('./fonts/RetroFont.ttf') format('truetype');
+    src: url('../fonts/RetroFont.ttf') format('truetype');
 }
 
 * {
@@ -46,7 +46,7 @@ nav button:hover {
 }
 
 #hero {
-    background-image: url("./images/hero-background.png");
+    background-image: url("../images/hero-background.png");
     background-size: cover; 
     background-position: center;  
     background-repeat: no-repeat;  
