@@ -1,0 +1,17 @@
+#menu {
+    padding: 40px;
+    background-color: #F5F5F5;
+    text-align: center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-image {
+    width: 1000px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
