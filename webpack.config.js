@@ -7,15 +7,27 @@ module.exports = {
     output: {
         filename: "main.js",
         path: path.resolve(__dirname, "dist"),
-        clean: true, 
+        clean: true,
     },
     devtool: "eval-source-map",
     devServer: {
-        watchFiles: ["./src/template.html"],
+        static: {
+            directory: path.resolve(__dirname, "dist"),
+        },
+        watchFiles: {
+            paths: ["./src/**/*"],
+            options: {
+                usePolling: true,
+            },
+        },
+        open: true,
+        hot: true,
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/template.html",
+            template: "./src/index.html",
+            filename: "index.html",
+            inject: "body",
         }),
     ],
     module: {
