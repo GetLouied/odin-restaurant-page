@@ -1,3 +1,7 @@
+import cassetteCappucino from './images/cassette-cappucino.png';
+import specialCombo from './images/special-combo.png';
+import pacmanPies from './images/pacman-pies.png';
+
 export default function loadHomePage() {
 
     // Get & Reset Main Div Content
@@ -53,19 +57,19 @@ export default function loadHomePage() {
 
     const items = [
         {
-            imgSrc: '../images/cassette-cappucino.png',
+            imgSrc: cassetteCappucino,
             altText: 'Cassette Cappuccino',
             title: 'Cassette Cappuccino',
             description: 'A classic cappuccino with a touch of vintage flair.'
         },
         {
-            imgSrc: '../images/special-combo.png',
+            imgSrc: specialCombo,
             altText: 'Special Combo',
             title: 'Special Combo of the Day',
             description: 'Polaroid Perfect Pair: A delightful combo of our most popular brews and treats.'
         },
         {
-            imgSrc: '../images/pacman-pies.png',
+            imgSrc: pacmanPies,
             altText: 'Pac-Man Pies',
             title: 'Pac-Man Pies',
             description: 'Delicious pies inspired by the arcade games of yesteryear.'
